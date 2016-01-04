@@ -168,6 +168,9 @@
 		275541C91C39498D00A5A9EC /* UIStoryboard+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541C11C39498D00A5A9EC /* UIStoryboard+WF.m */; };
 		275541CA1C39498D00A5A9EC /* UITextField+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541C31C39498D00A5A9EC /* UITextField+WF.m */; };
 		275541CB1C39498D00A5A9EC /* UIView+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541C51C39498D00A5A9EC /* UIView+WF.m */; };
+		275541D21C3975C300A5A9EC /* MBProgressHUD+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541CE1C3975C300A5A9EC /* MBProgressHUD+HM.m */; };
+		275541D31C3975C300A5A9EC /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 275541CF1C3975C300A5A9EC /* MBProgressHUD.bundle */; };
+		275541D41C3975C300A5A9EC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541D11C3975C300A5A9EC /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -520,6 +523,11 @@
 		275541C31C39498D00A5A9EC /* UITextField+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WF.m"; sourceTree = "<group>"; };
 		275541C41C39498D00A5A9EC /* UIView+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WF.h"; sourceTree = "<group>"; };
 		275541C51C39498D00A5A9EC /* UIView+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WF.m"; sourceTree = "<group>"; };
+		275541CD1C3975C300A5A9EC /* MBProgressHUD+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HM.h"; sourceTree = "<group>"; };
+		275541CE1C3975C300A5A9EC /* MBProgressHUD+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HM.m"; sourceTree = "<group>"; };
+		275541CF1C3975C300A5A9EC /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		275541D01C3975C300A5A9EC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		275541D11C3975C300A5A9EC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -627,6 +635,7 @@
 		27553FA61C38FAEC00A5A9EC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				275541CC1C3975C300A5A9EC /* MBProgessHUD */,
 				275541B81C39498D00A5A9EC /* Category */,
 				27553FA71C38FAEC00A5A9EC /* XMPP */,
 			);
@@ -1585,6 +1594,18 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		275541CC1C3975C300A5A9EC /* MBProgessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				275541CD1C3975C300A5A9EC /* MBProgressHUD+HM.h */,
+				275541CE1C3975C300A5A9EC /* MBProgressHUD+HM.m */,
+				275541CF1C3975C300A5A9EC /* MBProgressHUD.bundle */,
+				275541D01C3975C300A5A9EC /* MBProgressHUD.h */,
+				275541D11C3975C300A5A9EC /* MBProgressHUD.m */,
+			);
+			path = MBProgessHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1694,6 +1715,7 @@
 				27553F731C38D1E700A5A9EC /* Assets.xcassets in Resources */,
 				27553FDB1C38FB1300A5A9EC /* README.txt in Resources */,
 				27553F711C38D1E700A5A9EC /* Main.storyboard in Resources */,
+				275541D31C3975C300A5A9EC /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1722,8 +1744,10 @@
 				275541AB1C38FC6C00A5A9EC /* XMPPSRVResolver.m in Sources */,
 				275541701C38FC6C00A5A9EC /* XMPPvCardTempAdrTypes.m in Sources */,
 				275541951C38FC6C00A5A9EC /* XMPPStreamManagementMemoryStorage.m in Sources */,
+				275541D21C3975C300A5A9EC /* MBProgressHUD+HM.m in Sources */,
 				275541601C38FC6C00A5A9EC /* XMPPRoomHybridStorage.m in Sources */,
 				2755417D1C38FC6C00A5A9EC /* XMPPRegistration.m in Sources */,
+				275541D41C3975C300A5A9EC /* MBProgressHUD.m in Sources */,
 				275541441C38FC6C00A5A9EC /* XMPPCoreDataStorage.m in Sources */,
 				275541661C38FC6C00A5A9EC /* XMPPMessage+XEP0045.m in Sources */,
 				275541671C38FC6C00A5A9EC /* XMPPMUC.m in Sources */,
