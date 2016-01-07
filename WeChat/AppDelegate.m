@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XMPPFramework.h"
+#import "WCNavigationController.h"
 
 /*
  1、初始化XMPPStream
@@ -33,6 +34,8 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置导航栏背景
+    [WCNavigationController setupNavTheme];
     return YES;
 }
 
@@ -132,13 +135,16 @@
 }
 
 #pragma mark 公共的方法
--(void)logout
+-(void)xmppUserlogout
 {
     //1.发送“离线”消息
     XMPPPresence *offline = [XMPPPresence presenceWithType:@"unavailable"];
     [_xmppStream sendElement:offline];
     //2.与服务器断开连接
     [_xmppStream disconnect];
+    //3.回到登录界面
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    self.window.rootViewController = storyboard.instantiateInitialViewController;
 }
 -(void)xmppUserLogin:(XMPPResultBlock)resultBlock
 {
