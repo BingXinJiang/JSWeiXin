@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2709E58D1C4138EC00C1B979 /* WCXMPPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2709E58C1C4138EC00C1B979 /* WCXMPPTool.m */; };
 		272E24881C3EA40C0075B490 /* WCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E24871C3EA40C0075B490 /* WCLoginViewController.m */; };
 		272E248D1C3EA6900075B490 /* WCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248C1C3EA6900075B490 /* WCUserInfo.m */; };
 		272E24901C40A4880075B490 /* WCBaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248F1C40A4880075B490 /* WCBaseLoginViewController.m */; };
@@ -197,6 +198,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2709E58B1C4138EC00C1B979 /* WCXMPPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCXMPPTool.h; sourceTree = "<group>"; };
+		2709E58C1C4138EC00C1B979 /* WCXMPPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCXMPPTool.m; sourceTree = "<group>"; };
 		272E24861C3EA40C0075B490 /* WCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLoginViewController.h; sourceTree = "<group>"; };
 		272E24871C3EA40C0075B490 /* WCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLoginViewController.m; sourceTree = "<group>"; };
 		272E248A1C3EA6490075B490 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -583,6 +586,8 @@
 				272E248A1C3EA6490075B490 /* Singleton.h */,
 				272E248B1C3EA6900075B490 /* WCUserInfo.h */,
 				272E248C1C3EA6900075B490 /* WCUserInfo.m */,
+				2709E58B1C4138EC00C1B979 /* WCXMPPTool.h */,
+				2709E58C1C4138EC00C1B979 /* WCXMPPTool.m */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -1886,6 +1891,7 @@
 				275541541C38FC6C00A5A9EC /* XMPPSystemInputActivityMonitor.m in Sources */,
 				27553FDF1C38FB1300A5A9EC /* DDXMLNode.m in Sources */,
 				27553FD41C38FB1300A5A9EC /* DDASLLogger.m in Sources */,
+				2709E58D1C4138EC00C1B979 /* WCXMPPTool.m in Sources */,
 				275541B71C3914DD00A5A9EC /* WCOtherLoginViewController.m in Sources */,
 				275541471C38FC6C00A5A9EC /* XMPPOutgoingFileTransfer.m in Sources */,
 				2755418F1C38FC6C00A5A9EC /* XMPPvCardAvatarModule.m in Sources */,
