@@ -68,7 +68,12 @@
     //设置登录用户JID
     //resource 标示用户的客户端
     //从单例获取用户名
-    NSString *user = [WCUserInfo sharedWCUserInfo].user;
+    NSString *user = nil;
+    if (self.isRegisterOperation) {
+        user = [WCUserInfo sharedWCUserInfo].registerUser;
+    }else{
+        user = [WCUserInfo sharedWCUserInfo].user;
+    }
     XMPPJID *myJID = [XMPPJID jidWithUser:user domain:@"jiangsong.local" resource:@"iphone"];
     _xmppStream.myJID = myJID;
     
@@ -113,8 +118,15 @@
 -(void)xmppStreamDidConnect:(XMPPStream *)sender
 {
     WCLog(@"与主机连接成功");
-    //主机连接成功后，发送密码进行授权
-    [self sendPwdToHost];
+    if (self.isRegisterOperation) {
+        //连接成功后发送注册的密码
+        NSString *pwd = [WCUserInfo sharedWCUserInfo].registerPwd;
+        [_xmppStream registerWithPassword:pwd error:nil];
+    }else{
+        //主机连接成功后，发送密码进行授权
+        [self sendPwdToHost];
+    }
+    
 }
 -(void)xmppStreamDidDisconnect:(XMPPStream *)sender withError:(NSError *)error
 {
@@ -143,7 +155,22 @@
         _resultBlock(XMPPResultTypeFailure);
     }
 }
-
+#pragma mark 注册成功
+-(void)xmppStreamDidRegister:(XMPPStream *)sender
+{
+    WCLog(@"注册成功");
+    if (_resultBlock) {
+        _resultBlock(XMPPResultTypeRegisterSuccess);
+    }
+}
+#pragma mark 注册失败
+-(void)xmppStream:(XMPPStream *)sender didNotRegister:(DDXMLElement *)error
+{
+    WCLog(@"注册失败 %@", error);
+    if (_resultBlock) {
+        _resultBlock(XMPPResultTypeRegisterFailure);
+    }
+}
 #pragma mark 公共的方法
 -(void)xmppUserlogout
 {
@@ -166,10 +193,18 @@
     //如果以前连接过服务器，要断开
     /*Error Domain=XMPPStreamErrorDomain Code=1 "Attempting to connect while already connected or connecting." UserInfo={NSLocalizedDescription=Attempting to connect while already connected or connecting.}*/
     [_xmppStream disconnect];
-    //连接到服务器
+    //连接到服务器,发送登录授权密码
     [self connectToHost];
 }
-
+-(void)xmppUserRegister:(XMPPResultBlock)resultBlock
+{
+    //先把block存起来
+    _resultBlock = resultBlock;
+    //如果以前连接过服务器，要断开
+    [_xmppStream disconnect];
+    //连接到服务器，发送注册密码
+    [self connectToHost];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
