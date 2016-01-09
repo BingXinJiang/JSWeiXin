@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "XMPPFramework.h"
 #import "WCNavigationController.h"
+#import "WCUserInfo.h"
 
 /*
  1、初始化XMPPStream
@@ -36,6 +37,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //设置导航栏背景
     [WCNavigationController setupNavTheme];
+    //从沙盒中加载用户数据到单例
+    [[WCUserInfo sharedWCUserInfo] loadUserInfoFromSanbox];
+    //判断用户登录状态，YES直接来到主界面，NO去登录
+    if ([WCUserInfo sharedWCUserInfo].loginStatus) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = storyboard.instantiateInitialViewController;
+        //自动登录到服务器
+        [self xmppUserLogin:nil];
+    }
     return YES;
 }
 
@@ -57,8 +67,8 @@
     
     //设置登录用户JID
     //resource 标示用户的客户端
-    //从沙盒获取用户名
-    NSString *user = [[NSUserDefaults standardUserDefaults] objectForKey:@"user"];
+    //从单例获取用户名
+    NSString *user = [WCUserInfo sharedWCUserInfo].user;
     XMPPJID *myJID = [XMPPJID jidWithUser:user domain:@"jiangsong.local" resource:@"iphone"];
     _xmppStream.myJID = myJID;
     
@@ -80,8 +90,8 @@
 {
     WCLog(@"发送密码进行授权");
     NSError *err = nil;
-    //从沙盒中获取密码
-    NSString *pwd = [[NSUserDefaults standardUserDefaults] objectForKey:@"pwd"];
+    //从单例中获取密码
+    NSString *pwd = [WCUserInfo sharedWCUserInfo].pwd;
     [_xmppStream authenticateWithPassword:pwd error:&err];
     if (err) {
         WCLog(@"发送密码失败：%@", err);
@@ -145,6 +155,9 @@
     //3.回到登录界面
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
     self.window.rootViewController = storyboard.instantiateInitialViewController;
+    //4.更新用户的登录状态
+    [WCUserInfo sharedWCUserInfo].loginStatus = NO;
+    [[WCUserInfo sharedWCUserInfo] saveUserInfoToSanbox];
 }
 -(void)xmppUserLogin:(XMPPResultBlock)resultBlock
 {

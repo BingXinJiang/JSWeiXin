@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272E24881C3EA40C0075B490 /* WCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E24871C3EA40C0075B490 /* WCLoginViewController.m */; };
+		272E248D1C3EA6900075B490 /* WCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248C1C3EA6900075B490 /* WCUserInfo.m */; };
+		272E24901C40A4880075B490 /* WCBaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248F1C40A4880075B490 /* WCBaseLoginViewController.m */; };
 		27553F681C38D1E700A5A9EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27553F671C38D1E700A5A9EC /* main.m */; };
 		27553F6B1C38D1E700A5A9EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27553F6A1C38D1E700A5A9EC /* AppDelegate.m */; };
 		27553F6E1C38D1E700A5A9EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27553F6D1C38D1E700A5A9EC /* ViewController.m */; };
@@ -193,6 +196,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272E24861C3EA40C0075B490 /* WCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLoginViewController.h; sourceTree = "<group>"; };
+		272E24871C3EA40C0075B490 /* WCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLoginViewController.m; sourceTree = "<group>"; };
+		272E248A1C3EA6490075B490 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		272E248B1C3EA6900075B490 /* WCUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUserInfo.h; sourceTree = "<group>"; };
+		272E248C1C3EA6900075B490 /* WCUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUserInfo.m; sourceTree = "<group>"; };
+		272E248E1C40A4880075B490 /* WCBaseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBaseLoginViewController.h; sourceTree = "<group>"; };
+		272E248F1C40A4880075B490 /* WCBaseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCBaseLoginViewController.m; sourceTree = "<group>"; };
 		27553F631C38D1E700A5A9EC /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27553F671C38D1E700A5A9EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27553F691C38D1E700A5A9EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../../WeChat/WeChat/WeChat/AppDelegate.h; sourceTree = "<group>"; };
@@ -564,6 +574,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272E24891C3EA6020075B490 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				272E248A1C3EA6490075B490 /* Singleton.h */,
+				272E248B1C3EA6900075B490 /* WCUserInfo.h */,
+				272E248C1C3EA6900075B490 /* WCUserInfo.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		27553F5A1C38D1E700A5A9EC = {
 			isa = PBXGroup;
 			children = (
@@ -1576,6 +1596,10 @@
 		275541B41C3913EA00A5A9EC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				272E248E1C40A4880075B490 /* WCBaseLoginViewController.h */,
+				272E248F1C40A4880075B490 /* WCBaseLoginViewController.m */,
+				272E24861C3EA40C0075B490 /* WCLoginViewController.h */,
+				272E24871C3EA40C0075B490 /* WCLoginViewController.m */,
 				275541B51C3914DD00A5A9EC /* WCOtherLoginViewController.h */,
 				275541B61C3914DD00A5A9EC /* WCOtherLoginViewController.m */,
 			);
@@ -1617,6 +1641,7 @@
 		275541D51C3ABB9F00A5A9EC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				272E24891C3EA6020075B490 /* Singleton */,
 				275541D61C3ABBFE00A5A9EC /* Controllers */,
 			);
 			path = Common;
@@ -1818,9 +1843,11 @@
 				275541A01C38FC6C00A5A9EC /* XMPPMessage+XEP_0280.m in Sources */,
 				2755418D1C38FC6C00A5A9EC /* XMPPMessageArchiving.m in Sources */,
 				2755415B1C38FC6C00A5A9EC /* XMPPRoom.xcdatamodeld in Sources */,
+				272E24881C3EA40C0075B490 /* WCLoginViewController.m in Sources */,
 				2755419B1C38FC6C00A5A9EC /* XMPPTime.m in Sources */,
 				2755415E1C38FC6C00A5A9EC /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */,
 				275541841C38FC6C00A5A9EC /* XMPPCapabilities.xcdatamodel in Sources */,
+				272E248D1C3EA6900075B490 /* WCUserInfo.m in Sources */,
 				2755416A1C38FC6C00A5A9EC /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */,
 				275541961C38FC6C00A5A9EC /* XMPPStreamManagementStanzas.m in Sources */,
 				275541861C38FC6C00A5A9EC /* XMPPCapsCoreDataStorageObject.m in Sources */,
@@ -1921,6 +1948,7 @@
 				27553F681C38D1E700A5A9EC /* main.m in Sources */,
 				275541641C38FC6C00A5A9EC /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
 				275541C81C39498D00A5A9EC /* UIScreen+WF.m in Sources */,
+				272E24901C40A4880075B490 /* WCBaseLoginViewController.m in Sources */,
 				27553FD31C38FB1300A5A9EC /* DDAbstractDatabaseLogger.m in Sources */,
 				275541941C38FC6C00A5A9EC /* XMPPBlocking.m in Sources */,
 				275541731C38FC6C00A5A9EC /* XMPPvCardTempLabel.m in Sources */,
@@ -2170,6 +2198,7 @@
 				27553F921C38D1E700A5A9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27553F931C38D1E700A5A9EC /* Build configuration list for PBXNativeTarget "WeChatTests" */ = {
 			isa = XCConfigurationList;
@@ -2178,6 +2207,7 @@
 				27553F951C38D1E700A5A9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27553F961C38D1E700A5A9EC /* Build configuration list for PBXNativeTarget "WeChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -2186,6 +2216,7 @@
 				27553F981C38D1E700A5A9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
