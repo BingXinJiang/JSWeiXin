@@ -10,6 +10,8 @@
 #import "WCNavigationController.h"
 #import "WCUserInfo.h"
 #import "WCXMPPTool.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
 
 @interface AppDelegate ()
 @end
@@ -17,6 +19,11 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //获取沙盒路径
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    WCLog(@"%@", path);
+    //打开XMPP日志
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     //设置导航栏背景
     [WCNavigationController setupNavTheme];
     //从沙盒中加载用户数据到单例
