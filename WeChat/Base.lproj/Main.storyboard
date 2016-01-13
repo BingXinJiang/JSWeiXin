@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="532" y="1390"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="IhZ-TI-XnE">
             <objects>
-                <tableViewController id="bFF-kD-dzy" sceneMemberID="viewController">
+                <tableViewController id="bFF-kD-dzy" customClass="WCProfileViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="imE-jF-LYV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,6 +520,16 @@
                             <outlet property="delegate" destination="bFF-kD-dzy" id="dLj-Wg-ynj"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="emailLabel" destination="TRr-bG-Gls" id="BQr-wY-qFN"/>
+                        <outlet property="headerView" destination="vRV-0F-zTR" id="Ye6-3Y-vpr"/>
+                        <outlet property="nickNameLabel" destination="9pN-SP-DXc" id="BYo-kd-N4t"/>
+                        <outlet property="orgNameLabel" destination="7lJ-4f-j1F" id="ImB-o7-3xF"/>
+                        <outlet property="orgUnitLabel" destination="dsK-Pr-Ij6" id="4YH-7Q-TSa"/>
+                        <outlet property="phoneLabel" destination="pIw-GH-BQ3" id="cMs-Zc-0Wl"/>
+                        <outlet property="titleLabel" destination="mkT-du-8U8" id="DI8-Ou-Hh4"/>
+                        <outlet property="weixinNumLabel" destination="bcD-cI-1jN" id="eqh-1S-4rW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hht-nY-zKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
