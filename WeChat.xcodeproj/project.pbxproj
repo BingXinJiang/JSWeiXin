@@ -179,6 +179,7 @@
 		275541D41C3975C300A5A9EC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541D11C3975C300A5A9EC /* MBProgressHUD.m */; };
 		275541D91C3ABC6200A5A9EC /* WCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541D81C3ABC6200A5A9EC /* WCNavigationController.m */; };
 		275541DD1C3C166C00A5A9EC /* WCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541DC1C3C166C00A5A9EC /* WCMeViewController.m */; };
+		27F600FA1C49CFEF0043AE93 /* WCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -553,6 +554,8 @@
 		275541D81C3ABC6200A5A9EC /* WCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNavigationController.m; sourceTree = "<group>"; };
 		275541DB1C3C166C00A5A9EC /* WCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCMeViewController.h; sourceTree = "<group>"; };
 		275541DC1C3C166C00A5A9EC /* WCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCMeViewController.m; sourceTree = "<group>"; };
+		27F600F81C49CFEF0043AE93 /* WCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCEditProfileViewController.h; sourceTree = "<group>"; };
+		27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCEditProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1676,6 +1679,8 @@
 				275541DC1C3C166C00A5A9EC /* WCMeViewController.m */,
 				274235801C468FBC00267CCE /* WCProfileViewController.h */,
 				274235811C468FBC00267CCE /* WCProfileViewController.m */,
+				27F600F81C49CFEF0043AE93 /* WCEditProfileViewController.h */,
+				27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1844,6 +1849,7 @@
 				275541A11C38FC6C00A5A9EC /* XMPPMessageCarbons.m in Sources */,
 				275541501C38FC6C00A5A9EC /* XMPPResourceMemoryStorageObject.m in Sources */,
 				275541AC1C38FC6C00A5A9EC /* XMPPStringPrep.m in Sources */,
+				27F600FA1C49CFEF0043AE93 /* WCEditProfileViewController.m in Sources */,
 				275540051C38FC5100A5A9EC /* XMPPXFacebookPlatformAuthentication.m in Sources */,
 				2755419F1C38FC6C00A5A9EC /* XMPPMessage+XEP_0224.m in Sources */,
 				275541DD1C3C166C00A5A9EC /* WCMeViewController.m in Sources */,
