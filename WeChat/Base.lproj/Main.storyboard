@@ -59,17 +59,17 @@
             </objects>
             <point key="canvasLocation" x="448" y="-929"/>
         </scene>
-        <!--Root View Controller-->
+        <!--通讯录-->
         <scene sceneID="wzM-P7-WmD">
             <objects>
-                <tableViewController id="5b0-kp-N1O" sceneMemberID="viewController">
+                <tableViewController id="5b0-kp-N1O" customClass="WCContactsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="H4S-na-dfW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DfI-EO-SG0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" id="DfI-EO-SG0">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DfI-EO-SG0" id="bj5-St-H2h">
@@ -85,7 +85,7 @@
                             <outlet property="delegate" destination="5b0-kp-N1O" id="flh-ue-1My"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="wfb-Pb-fHs"/>
+                    <navigationItem key="navigationItem" title="通讯录" id="wfb-Pb-fHs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVw-d7-8ym" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

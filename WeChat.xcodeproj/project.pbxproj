@@ -180,6 +180,7 @@
 		275541D91C3ABC6200A5A9EC /* WCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541D81C3ABC6200A5A9EC /* WCNavigationController.m */; };
 		275541DD1C3C166C00A5A9EC /* WCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275541DC1C3C166C00A5A9EC /* WCMeViewController.m */; };
 		27F600FA1C49CFEF0043AE93 /* WCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */; };
+		27F600FD1C4B717B0043AE93 /* WCContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F600FC1C4B717B0043AE93 /* WCContactsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -556,6 +557,8 @@
 		275541DC1C3C166C00A5A9EC /* WCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCMeViewController.m; sourceTree = "<group>"; };
 		27F600F81C49CFEF0043AE93 /* WCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCEditProfileViewController.h; sourceTree = "<group>"; };
 		27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCEditProfileViewController.m; sourceTree = "<group>"; };
+		27F600FB1C4B717B0043AE93 /* WCContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCContactsViewController.h; sourceTree = "<group>"; };
+		27F600FC1C4B717B0043AE93 /* WCContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCContactsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1681,6 +1684,8 @@
 				274235811C468FBC00267CCE /* WCProfileViewController.m */,
 				27F600F81C49CFEF0043AE93 /* WCEditProfileViewController.h */,
 				27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */,
+				27F600FB1C4B717B0043AE93 /* WCContactsViewController.h */,
+				27F600FC1C4B717B0043AE93 /* WCContactsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1822,6 +1827,7 @@
 				2755413D1C38FC6C00A5A9EC /* XMPPJID.m in Sources */,
 				275541AB1C38FC6C00A5A9EC /* XMPPSRVResolver.m in Sources */,
 				275541701C38FC6C00A5A9EC /* XMPPvCardTempAdrTypes.m in Sources */,
+				27F600FD1C4B717B0043AE93 /* WCContactsViewController.m in Sources */,
 				275541951C38FC6C00A5A9EC /* XMPPStreamManagementMemoryStorage.m in Sources */,
 				275541D21C3975C300A5A9EC /* MBProgressHUD+HM.m in Sources */,
 				275541601C38FC6C00A5A9EC /* XMPPRoomHybridStorage.m in Sources */,
