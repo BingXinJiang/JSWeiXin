@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2709E58D1C4138EC00C1B979 /* WCXMPPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2709E58C1C4138EC00C1B979 /* WCXMPPTool.m */; };
+		2717513C1C4BA40200DAE348 /* WCAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2717513B1C4BA40200DAE348 /* WCAddContactViewController.m */; };
 		272E24881C3EA40C0075B490 /* WCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E24871C3EA40C0075B490 /* WCLoginViewController.m */; };
 		272E248D1C3EA6900075B490 /* WCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248C1C3EA6900075B490 /* WCUserInfo.m */; };
 		272E24901C40A4880075B490 /* WCBaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E248F1C40A4880075B490 /* WCBaseLoginViewController.m */; };
@@ -203,6 +204,8 @@
 /* Begin PBXFileReference section */
 		2709E58B1C4138EC00C1B979 /* WCXMPPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCXMPPTool.h; sourceTree = "<group>"; };
 		2709E58C1C4138EC00C1B979 /* WCXMPPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCXMPPTool.m; sourceTree = "<group>"; };
+		2717513A1C4BA40200DAE348 /* WCAddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAddContactViewController.h; sourceTree = "<group>"; };
+		2717513B1C4BA40200DAE348 /* WCAddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAddContactViewController.m; sourceTree = "<group>"; };
 		272E24861C3EA40C0075B490 /* WCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLoginViewController.h; sourceTree = "<group>"; };
 		272E24871C3EA40C0075B490 /* WCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLoginViewController.m; sourceTree = "<group>"; };
 		272E248A1C3EA6490075B490 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -1686,6 +1689,8 @@
 				27F600F91C49CFEF0043AE93 /* WCEditProfileViewController.m */,
 				27F600FB1C4B717B0043AE93 /* WCContactsViewController.h */,
 				27F600FC1C4B717B0043AE93 /* WCContactsViewController.m */,
+				2717513A1C4BA40200DAE348 /* WCAddContactViewController.h */,
+				2717513B1C4BA40200DAE348 /* WCAddContactViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1972,6 +1977,7 @@
 				275541371C38FC6C00A5A9EC /* NSData+XMPP.m in Sources */,
 				2755416B1C38FC6C00A5A9EC /* XMPPvCardCoreDataStorage.m in Sources */,
 				2755417E1C38FC6C00A5A9EC /* NSDate+XMPPDateTimeProfiles.m in Sources */,
+				2717513C1C4BA40200DAE348 /* WCAddContactViewController.m in Sources */,
 				275541C91C39498D00A5A9EC /* UIStoryboard+WF.m in Sources */,
 				2755419A1C38FC6C00A5A9EC /* XMPPAutoTime.m in Sources */,
 				275541451C38FC6C00A5A9EC /* XMPPFileTransfer.m in Sources */,
